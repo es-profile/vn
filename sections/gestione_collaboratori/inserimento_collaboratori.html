@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserimento Collaboratori</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .subprocess {
+            margin-left: 20px;
+            border-left: 3px solid #003366;
+            padding-left: 15px;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+        }
+        .subprocess ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: #ffffff; border: 3px solid #003366; border-radius: 10px; padding: 10px;">
+        <a href="../../index.html">
+            <img src="../../images/vitanuova-logo.svg" alt="Logo Vita Nuova" style="max-width: 200px; cursor: pointer;">
+        </a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="inserimento_collaboratori.html">Inserimento Collaboratori</a></li>
+            <li><a href="cancellazione_collaboratori.html">Cancellazione Collaboratori</a></li>
+            <li><a href="formazione_collaboratori.html">Formazione Collaboratori</a></li>
+            <li><a href="copertura_assicurativa_collaboratori.html">Copertura Assicurativa Collaboratori</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Inserimento Collaboratori</h1>
+        <p>Guida completa per l'inserimento di collaboratori. Scegli il tipo di collaboratore per visualizzare i dettagli.</p>
+
+        <section id="step1" class="step" style="display: block;">
+            <h2>Seleziona il tipo di collaboratore:</h2>
+            <button onclick="handleStep('neofita')">Neofita</button>
+            <button onclick="handleStep('professionalizzato')">Professionalizzato</button>
+            <button onclick="handleStep('reiscrizione')">Reiscrizione</button>
+        </section>
+
+        <section id="neofita" class="step" style="display: none;">
+            <h2>Neofita</h2>
+            <ol>
+                <li onclick="toggleInstructions('neofita-docs')" style="color: #003366; cursor: pointer;">Raccolta documenti necessari</li>
+                <div id="neofita-docs" class="subprocess" style="display: none;">
+                    <p>Documenti richiesti:</p>
+                    <ul>
+                        <li>Documento d'identità e Codice Fiscale.</li>
+                        <li>Certificato carichi pendenti e casellario giudiziario.</li>
+                        <li>Attestato formazione obbligatoria (60 ore).</li>
+                        <li>Scheda di inserimento compilata e firmata.</li>
+                    </ul>
+                </div>
+                <li onclick="toggleInstructions('neofita-portals')" style="color: #003366; cursor: pointer;">Richiesta accessi a portale e database</li>
+                <div id="neofita-portals" class="subprocess" style="display: none;">
+                    <p>Effettua la richiesta tramite il gestionale aziendale.</p>
+                </div>
+                <li onclick="toggleInstructions('neofita-rui')" style="color: #003366; cursor: pointer;">Iscrizione al Registro Unico degli Intermediari</li>
+                <div id="neofita-rui" class="subprocess" style="display: none;">
+                    <p>Invia la documentazione a IVASS per l'iscrizione al RUI.</p>
+                </div>
+            </ol>
+            <button onclick="handleStep('step1')">Torna indietro</button>
+        </section>
+
+        <section id="professionalizzato" class="step" style="display: none;">
+            <h2>Professionalizzato</h2>
+            <ol>
+                <li onclick="toggleInstructions('prof-docs')" style="color: #003366; cursor: pointer;">Raccolta documenti aggiornati</li>
+                <div id="prof-docs" class="subprocess" style="display: none;">
+                    <p>Documenti richiesti:</p>
+                    <ul>
+                        <li>Documento d'identità e Codice Fiscale.</li>
+                        <li>Certificato carichi pendenti e casellario giudiziario.</li>
+                        <li>Vecchio numero RUI.</li>
+                    </ul>
+                </div>
+                <li onclick="toggleInstructions('prof-update')" style="color: #003366; cursor: pointer;">Aggiornamento credenziali</li>
+                <div id="prof-update" class="subprocess" style="display: none;">
+                    <p>Aggiorna le credenziali nei sistemi aziendali e CRM.</p>
+                </div>
+            </ol>
+            <button onclick="handleStep('step1')">Torna indietro</button>
+        </section>
+
+        <section id="reiscrizione" class="step" style="display: none;">
+            <h2>Reiscrizione</h2>
+            <ol>
+                <li onclick="toggleInstructions('reiscrizione-docs')" style="color: #003366; cursor: pointer;">Verifica documentazione obbligatoria</li>
+                <div id="reiscrizione-docs" class="subprocess" style="display: none;">
+                    <p>Documenti richiesti:</p>
+                    <ul>
+                        <li>Documento d'identità e Codice Fiscale.</li>
+                        <li>Certificato carichi pendenti e casellario giudiziario.</li>
+                        <li>Attestato formazione obbligatoria (30/60 ore).</li>
+                    </ul>
+                </div>
+            </ol>
+            <button onclick="handleStep('step1')">Torna indietro</button>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Vita Nuova
+    </footer>
+    <script>
+        function handleStep(step) {
+            const steps = document.querySelectorAll('.step');
+            steps.forEach(s => s.style.display = 'none');
+            document.getElementById(step).style.display = 'block';
+        }
+
+        function toggleInstructions(id) {
+            const element = document.getElementById(id);
+            element.style.display = element.style.display === 'none' || element.style.display === '' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
