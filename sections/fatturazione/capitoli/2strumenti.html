@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2. Strumenti e Sistemi Utilizzati</title>
+  <link rel="stylesheet" href="../../../css/style.css" />
+  <style>
+    body, main, section, p, ul, ol, li, h2, h3, h4, h5 {
+      text-align: left;
+      margin: 0;
+      padding: 0;
+    }
+    p, ul, ol {
+      margin: 0 0 10px 0;
+      padding: 0;
+    }
+    h2, h3, h4, h5 {
+      margin: 15px 0 10px 0;
+    }
+    main {
+      padding: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #0055A4;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    nav ul li {
+      margin-right: 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #0055A4;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .container {
+      min-height: calc(100vh - 50px);
+      padding-bottom: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header style="background-color: #ffffff; border: 3px solid #0055A4; border-radius: 10px; padding: 10px; text-align: center;">
+    <a href="../../../index.html">
+      <img src="../../../images/vitanuova-logo.svg" alt="Logo Vita Nuova" style="max-width: 200px; cursor: pointer;">
+    </a>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="../indice_fatturazione_provvigioni.html">Torna all'Indice</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <main>
+      <h2>2. Strumenti e Sistemi Utilizzati</h2>
+      <h3>2.1 VNH</h3>
+      <ul>
+        <li>VNH sono due aree (o moduli) del gestionale Vita Nuova. In particolare:
+          <ul>
+            <li>VNH gestisce la parte di fatturazione e consente l’inserimento manuale di Extra (voci a credito) e Recuperi (voci a debito).</li>
+            <li>In VNH si generano anche i cedolini e le proforma fattura da inviare ai collaboratori.</li>
+            <li>Ogni collaboratore ha un proprio codice (matricola VNH).</li>
+          </ul>
+        </li>
+        <li>Struttura ad albero: un collaboratore può avere altri collaboratori sotto di sé. Chi è a capo di un gruppo è tipicamente un Area Manager o Branch Manager.</li>
+      </ul>
+
+      <h3>2.2 File Excel di supporto (quadernone, archivio, ecc.)</h3>
+      <ul>
+        <li>Quadernone cartaceo: si annotano le richieste dell’ultimo minuto, specialmente quando arrivano a voce (anticipi, storni, rateizzazioni).</li>
+        <li>File Excel principale (ad esempio “Amministrazione e Fatture 2024” o “File fatturazione 2022-2023-2024”):
+          <ul>
+            <li>Contiene diverse cartelle (una per mese produttivo) e la sezione “MEMOFATTURAZIONE” dove si elencano tutti i collaboratori e le varie voci da inserire su VNH.</li>
+            <li>Spesso si usa un codice colore: bianco = da inserire, rosa = già inserito, verde = scaduto o completato.</li>
+            <li>Esistono anche cartelle dedicate alle Lettere di Intenti, agli Atti di pignoramento e ai Progetti speciali.</li>
+          </ul>
+        </li>
+        <li>Cartelle di Mail:
+          <ul>
+            <li>Amministrazione e Fatture &rarr; 2024 &rarr; [Mese Produttivo] &rarr; Mail</li>
+            <li>Qui si salvano tutte le email con richieste di aggiustamenti, spostamenti, anticipi, ecc. In questo modo si ha un archivio cronologico.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>2.3 Email e WhatsApp per comunicazioni</h3>
+      <ul>
+        <li>Email:
+          <ul>
+            <li>I collaboratori e i manager inviano richieste o segnalazioni a <code>fatturazione@vitanuova.eu</code> e/o <code>gestionerete@vitanuova.eu</code>.</li>
+            <li>Prima di chiudere il mese, si ricevono anche i file Excel di “sistemazioni d’Area”.</li>
+          </ul>
+        </li>
+        <li>WhatsApp:
+          <ul>
+            <li>Utilissimo per sollecitare i collaboratori che devono ancora emettere fattura elettronica o che devono confermare un anticipo.</li>
+            <li>L’uso quotidiano facilita la tempestività degli scambi.</li>
+          </ul>
+        </li>
+      </ul>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2025 Vita Nuova
+  </footer>
+</body>
+</html>

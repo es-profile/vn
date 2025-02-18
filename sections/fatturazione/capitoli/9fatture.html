@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>9. Fatture e Pagamenti: Procedura Completa</title>
+  <link rel="stylesheet" href="../../../css/style.css" />
+  <style>
+    body, main, section, p, ul, ol, li, h2, h3, h4, h5 {
+      text-align: left;
+      margin: 0;
+      padding: 0;
+    }
+    p, ul, ol {
+      margin: 0 0 10px 0;
+      padding: 0;
+    }
+    h2, h3, h4, h5 {
+      margin: 15px 0 10px 0;
+    }
+    main {
+      padding: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #0055A4;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    nav ul li {
+      margin-right: 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #0055A4;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .container {
+      min-height: calc(100vh - 50px);
+      padding-bottom: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header style="background-color: #ffffff; border: 3px solid #0055A4; border-radius: 10px; padding: 10px; text-align: center;">
+    <a href="../../../index.html">
+      <img src="../../../images/vitanuova-logo.svg" alt="Logo Vita Nuova" style="max-width: 200px; cursor: pointer;">
+    </a>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="../indice_fatturazione_provvigioni.html">Torna all'Indice</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <main>
+      <h2>9. Fatture e Pagamenti: Procedura Completa</h2>
+
+      <h3>9.1 Fatture a Sistema vs. Fatture Elettroniche</h3>
+      <ul>
+        <li><strong>Fatture a Sistema:</strong> collaboratori che non hanno l’obbligo di emettere e-fattura (es. regime ordinario con ritenuta d’acconto). Vita Nuova le “genera” direttamente su VNH:
+          <ul>
+            <li>Subito dopo l’ultimo giro, vengono pagate senza aspettare arrivo sul cassetto fiscale.</li>
+          </ul>
+        </li>
+        <li><strong>Fatture Elettroniche:</strong> regime forfettario (obbligatorio e-fattura dal 2024) o ordinario con e-fattura.
+          <ul>
+            <li>In questo caso, il pagamento avviene solo quando la fattura è arrivata a Vita Nuova (codice SDI M5UXCR1).</li>
+            <li>Tesoreria invia ogni giorno un file con l’elenco delle e-fatture pervenute. L’amministrazione controlla che importi e dati siano corretti e sblocca il pagamento.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>9.2 Regimi Fiscali (Forfettario, Ordinario) e Prestazioni Occasionali</h3>
+      <ul>
+        <li><strong>Forfettario:</strong> il collaboratore non applica la ritenuta d’acconto, ma se supera determinate soglie di ricavi deve passare a ordinario; inoltre inserisce il bollo di 2€ se la fattura supera 77,47€, ma tale bollo non deve essere addebitato a Vita Nuova.</li>
+        <li><strong>Ordinario con ritenuta d’acconto:</strong> Vita Nuova versa al collaboratore il netto, trattenendo la ritenuta da conto (cedolino con importo lordo e ritenuta). A fine anno si emettono le CU.</li>
+        <li><strong>Prestazioni Occasionali (P.OCC):</strong> se un collaboratore non ha partita IVA, può operare per un breve periodo (entro un tetto di 5.000€ lordi annui). Se però supera i 3 mesi o i 5.000€, la direzione può bloccare i pagamenti finché non apre la p.IVA.</li>
+      </ul>
+
+      <h3>9.3 Invio delle Proforma da VNH e Controllo Numerazione</h3>
+      <ol>
+        <li>Dopo il giro definitivo, si vanno a generare le proforma fattura (cedolini) da VNH, selezionando i collaboratori con un lordo ≥ 100€ (quelli sotto 100€ rimarranno in sospeso).</li>
+        <li><strong>Invio multiplo:</strong>
+          <ul>
+            <li>Spuntare i nominativi e cliccare su “Invio Multiplo”.</li>
+            <li>In alcuni casi, se il gestionale si blocca, si procede inviando 20-80 fatture alla volta.</li>
+          </ul>
+        </li>
+        <li><strong>Controllo numerazione:</strong>
+          <ul>
+            <li>Verificare che la numerazione in VNH sia corretta e sequenziale. Se no, intervenire manualmente o segnarsi l’anomalia per farla correggere dal supporto IT.</li>
+          </ul>
+        </li>
+      </ol>
+
+      <h3>9.4 Distinte di Pagamento e Confronto con Tesoreria</h3>
+      <ul>
+        <li>Subito dopo l’ultimo giro, si prepara un file di pagamento (spesso chiamato “Perimetro Pagamenti” o “Elenco Fatture da Pagare”) in cui sono elencati:
+          <ul>
+            <li>Collaboratore, importo lordo, importo netto (se ritenuta), IBAN, note (es. pignoramento, anticipo, etc.).</li>
+          </ul>
+        </li>
+        <li>Si invia questo file a Tesoreria, numerando le distinte (Distinta 1, Distinta 2, ecc.), cosicché Tesoreria sappia quali fatture pagare di volta in volta.</li>
+        <li>Tesoreria ogni giorno inoltra un file di export con le fatture elettroniche arrivate a Vita Nuova: l’operatore fa il matching (cercavert in Excel) tra l’importo proforma e quello effettivamente fatturato dal collaboratore.</li>
+      </ul>
+
+      <h3>9.5 Pagamenti Fatture Elettroniche e Gestione del Bollo</h3>
+      <ul>
+        <li>Il pagamento di una e-fattura avviene solo dopo la verifica che l’importo corrisponda alla proforma.</li>
+        <li>Se un collaboratore in regime forfettario (o altro) aggiunge 2€ di bollo alla fattura, non deve addebitarlo a Vita Nuova. Se lo fa, si richiede nota di credito e fattura rettificata.</li>
+        <li>In un file excel di gestione pagamenti, si possono usare colori:
+          <ul>
+            <li><strong>Rosso:</strong> Fattura elettronica in attesa di arrivo sul cassetto fiscale.</li>
+            <li><strong>Giallo:</strong> Fattura arrivata, pagamento inviato a tesoreria.</li>
+            <li><strong>Verde:</strong> Pagamento completato (tesoreria ha mandato la contabile).</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>9.6 Errori, Fatture Sbagliate e Note di Credito</h3>
+      <ul>
+        <li><strong>Errori frequenti:</strong>
+          <ul>
+            <li>Collaboratore emette fattura con importo diverso.</li>
+            <li>Dimentica la ritenuta (se ordinario) o aggiunge spese non dovute.</li>
+            <li>Copia di un altro collaboratore (errore di nominativo/IBAN).</li>
+          </ul>
+        </li>
+        <li><strong>Procedura:</strong>
+          <ol>
+            <li>Contattare subito il collaboratore per segnalare l’errore.</li>
+            <li>Attendere la nota di credito corretta, registrarla, quindi chiedere una nuova fattura corretta.</li>
+            <li>Aggiornare il file “perimetro pagamenti” segnando le fatture sbagliate e la successiva sostituzione.</li>
+          </ol>
+        </li>
+      </ul>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2025 Vita Nuova
+  </footer>
+</body>
+</html>

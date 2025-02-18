@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>5. Gestione di Anticipi, Over, Storni e Aggiustamenti Provvigionali</title>
+  <link rel="stylesheet" href="../../../css/style.css" />
+  <style>
+    body, main, section, p, ul, ol, li, h2, h3, h4, h5 {
+      text-align: left;
+      margin: 0;
+      padding: 0;
+    }
+    p, ul, ol {
+      margin: 0 0 10px 0;
+      padding: 0;
+    }
+    h2, h3, h4, h5 {
+      margin: 15px 0 10px 0;
+    }
+    main {
+      padding: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #0055A4;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    nav ul li {
+      margin-right: 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #0055A4;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .container {
+      min-height: calc(100vh - 50px);
+      padding-bottom: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header style="background-color: #ffffff; border: 3px solid #0055A4; border-radius: 10px; padding: 10px; text-align: center;">
+    <a href="../../../index.html">
+      <img src="../../../images/vitanuova-logo.svg" alt="Logo Vita Nuova" style="max-width: 200px; cursor: pointer;">
+    </a>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="../indice_fatturazione_provvigioni.html">Torna all'Indice</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <main>
+      <h2>5. Gestione di Anticipi, Over, Storni e Aggiustamenti Provvigionali</h2>
+
+      <h3>5.1 Anticipi e Rate di Recupero</h3>
+      <ul>
+        <li><strong>Autorizzazione:</strong> normalmente Giuseppe Ciccioli (Pino) o Fabrizio Colombo danno il via libera a un anticipo.</li>
+        <li><strong>Registrazione:</strong> si inserisce in VNH un EXTRA di importo pari all’anticipo con scadenza alla fine del mese, in modo che si rifletta solo in quella fatturazione; il mese dopo si fa un RECUPERO.</li>
+        <li><strong>Importante:</strong> sempre segnare su Excel (o quadernone) data, importo, e mese previsto per il recupero. In caso di dubbi, controllare le mail di autorizzazione.</li>
+      </ul>
+
+      <h3>5.2 Over e Lettere di Intenti</h3>
+      <ul>
+        <li><strong>Over:</strong> somme aggiuntive riconosciute a Branch/Area Manager (o a singoli collaboratori) per accordi interni (volte a incentivare il lavoro, gestire l’area, ecc.).</li>
+        <li><strong>Lettere di Intenti:</strong> contratti scritti che stabiliscono minimi garantiti o trattamenti speciali (vedi §6.2). Questi documenti sono conservati nella cartella AMM. E FATTURE &rarr; LETTERE DI INTENTI ....</li>
+      </ul>
+
+      <h3>5.3 Spostamenti di Provvigioni (Sistemazioni d’Area) e Storni</h3>
+      <ul>
+        <li><strong>Sistemazioni d’Area:</strong> files Excel che i Branch/Area Manager inviano con dicitura “Togli X a Tizio, metti X a Caio”. Vanno inseriti nelle apposite colonne di VNH, spuntando un + e un - dello stesso importo.</li>
+        <li><strong>Storni:</strong> se una polizza non andata a buon fine era stata inizialmente pagata, bisogna stornare l’importo. Si effettua un RECUPERO di quell’importo (o più rate) sul collaboratore. Se l’errore di pagamento era su un collega differente, si procede con un + da una parte e un - dall’altra.</li>
+      </ul>
+
+      <h3>5.4 Sospesi Volontari</h3>
+      <ul>
+        <li>Alcuni collaboratori preferiscono non incassare per motivi fiscali (es. sforare una soglia). L’operatore:
+          <ul>
+            <li>Inserisce un RECUPERO corrispondente all’intero importo della fattura, così questa risulta 0.</li>
+            <li>Tiene nota in un file Excel dedicato ai “sospesi”, segnando quanto Vita Nuova “deve” a quel collaboratore e in che mese potrà essergli corrisposto.</li>
+          </ul>
+        </li>
+      </ul>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2025 Vita Nuova
+  </footer>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>4. Processo Mensile di Fatturazione</title>
+  <link rel="stylesheet" href="../../../css/style.css" />
+  <style>
+    body, main, section, p, ul, ol, li, h2, h3, h4, h5 {
+      text-align: left;
+      margin: 0;
+      padding: 0;
+    }
+    p, ul, ol {
+      margin: 0 0 10px 0;
+      padding: 0;
+    }
+    h2, h3, h4, h5 {
+      margin: 15px 0 10px 0;
+    }
+    main {
+      padding: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #0055A4;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    nav ul li {
+      margin-right: 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #0055A4;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .container {
+      min-height: calc(100vh - 50px);
+      padding-bottom: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header style="background-color: #ffffff; border: 3px solid #0055A4; border-radius: 10px; padding: 10px; text-align: center;">
+    <a href="../../../index.html">
+      <img src="../../../images/vitanuova-logo.svg" alt="Logo Vita Nuova" style="max-width: 200px; cursor: pointer;">
+    </a>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="../indice_fatturazione_provvigioni.html">Torna all'Indice</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <main>
+      <h2>4. Processo Mensile di Fatturazione: Descrizione Dettagliata</h2>
+
+      <h3>4.1 Mese Produttivo vs. Mese di Pagamento</h3>
+      <ul>
+        <li>Il mese produttivo (es. “Gennaio Produttivo”) copre il periodo dal 15 dicembre al 15 gennaio.</li>
+        <li>Il pagamento relativo a quel mese produttivo avviene solitamente intorno al 20 gennaio (o qualche giorno dopo).</li>
+        <li>Tutti i file e i riferimenti che usiamo nel gestionale (VNH, cartelle di archivio) fanno riferimento al mese produttivo.
+          <ul>
+            <li>Esempio: “Cartella &rarr; 2024 &rarr; Gennaio Produttivo” contiene i documenti per il flusso di fatturazione pagato il 20 gennaio, ma che si riferisce a polizze dal 15/12 al 15/01.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>4.2 Chiusura del Mese Precedente e Pulizia dei Dati in VNH</h3>
+      <ol>
+        <li>Verificare che tutte le fatture elettroniche del mese precedente siano state pagate e che non vi siano collaboratori in attesa di pagamento o note di credito pendenti.</li>
+        <li>Stampare l’elenco degli anticipi erogati nel mese che si sta per “archiviare” (da VNH &rarr; COLLABORATORE &rarr; EXTRA, filtrare la colonna “ANTICIPI” &gt; 0).</li>
+        <li>Aprire il File Excel (ad esempio “File fatturazione 2022-2023-2024”) e stampare la sezione “MEMOFATTURAZIONE” del mese produttivo appena chiuso, per confrontare ciò che effettivamente è stato inserito in VNH.</li>
+      </ol>
+
+      <h3>4.3 Eliminazione di Recuperi ed Extra del Mese Precedente</h3>
+      <ul>
+        <li>Si procede riga per riga in VNH, per evitare disallineamenti:
+          <ul>
+            <li><strong>Recuperi:</strong> se un collaboratore aveva un recupero in 2 o 3 rate, controllare se quella rata è l’ultima o se occorre modificare (es. da “2/3” a “3/3”). Se il recupero è completato, si elimina definitivamente.</li>
+            <li><strong>Extra:</strong> controllare la “data di scadenza”. Se era un on top mensile e la scadenza era proprio la fine del mese, si può rimuovere. Se è un on top a lungo termine, lasciarlo inalterato e/o aggiornare la data.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>4.4 Inserimento delle Nuove Voci (Recuperi, Extra, Anticipi)</h3>
+      <ul>
+        <li><strong>Recuperi:</strong> debiti del collaboratore, come storni di polizze, restituzioni di anticipi, spese di ufficio, spese mediche, costi tablet, ecc.</li>
+        <li><strong>Extra:</strong> crediti per il collaboratore, come over da area manager, anticipi di liquidità, minimi garantiti, integrazioni per errore di polizza, ecc.</li>
+        <li><strong>Anticipi:</strong> se un collaboratore chiede 2.000€ “perché la polizza in chiusura non è stata contabilizzata in tempo”, si inserisce un EXTRA di +2.000. Il mese successivo si dovrà inserire un RECUPERO di -2.000 (o rateizzato).</li>
+      </ul>
+
+      <h3>4.5 Controlli Preliminari ed Esempi di Situazioni Tipiche</h3>
+      <ul>
+        <li><strong>Rateizzazione:</strong> se un anticipo è di 3.000€ da restituire in 3 mesi, ogni mese va inserito un -1.000 in “Recuperi” con la rata (1/3, 2/3, 3/3).</li>
+        <li><strong>Sospesi:</strong> se un collaboratore non vuole essere pagato nel mese corrente, si inserisce un recupero pari all’intero importo che alzerà la fattura a 0. Il mese successivo si potrà invertire l’operazione, se autorizzato.</li>
+        <li><strong>Contributi ufficio:</strong> verificare che quelli mensili e con scadenza lunga siano già presenti e corretti (es. 31/12/2026), così non vengono cancellati.</li>
+      </ul>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2025 Vita Nuova
+  </footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>10. Chiusura Mensile</title>
+  <link rel="stylesheet" href="../../../css/style.css" />
+  <style>
+    body, main, section, p, ul, ol, li, h2, h3, h4, h5 {
+      text-align: left;
+      margin: 0;
+      padding: 0;
+    }
+    p, ul, ol {
+      margin: 0 0 10px 0;
+      padding: 0;
+    }
+    h2, h3, h4, h5 {
+      margin: 15px 0 10px 0;
+    }
+    main {
+      padding: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #0055A4;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    nav ul li {
+      margin-right: 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #0055A4;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .container {
+      min-height: calc(100vh - 50px);
+      padding-bottom: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header style="background-color: #ffffff; border: 3px solid #0055A4; border-radius: 10px; padding: 10px; text-align: center;">
+    <a href="../../../index.html">
+      <img src="../../../images/vitanuova-logo.svg" alt="Logo Vita Nuova" style="max-width: 200px; cursor: pointer;">
+    </a>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="../indice_fatturazione_provvigioni.html">Torna all'Indice</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <main>
+      <h2>10. Chiusura Mensile: Penultimo Giro, Giro Definitivo e Perimetro Pagamenti</h2>
+
+      <h3>10.1 Penultimo Giro e Controlli Finali</h3>
+      <ul>
+        <li>Paolo Meneghelli genera un penultimo giro di calcolo, mandandolo a direzione, area manager e all’amministrazione.</li>
+        <li>Ci si accerta di:
+          <ul>
+            <li>Avere tutte le sistemazioni d’Area inserite (file excel inviati).</li>
+            <li>Avere inserito tutti i contributi “Energia Nuova”.</li>
+            <li>Avere conteggiato i pignoramenti corretti.</li>
+            <li>Verificare i saldi di recupero (anticipi erogati il mese precedente).</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>10.2 Giro Definitivo, Perimetro Pagamenti e Colorazioni</h3>
+      <ul>
+        <li>Raggiunto l’accordo su eventuali ultime modifiche (es. “Da Tizio a Caio 500€”), Paolo fa il giro definitivo.</li>
+        <li>Si ottiene un file Excel chiamato “Perimetro Pagamenti” (o simile) con l’elenco dei collaboratori e l’importo finale della fattura.</li>
+        <li>L’operatore quindi:
+          <ul>
+            <li>Evidenzia in rosso i collaboratori da non pagare (prest. occ. oltre i 3 mesi, pignoramenti particolari, blocchi direzione, ecc.).</li>
+            <li>Segna come fatture elettroniche coloro che devono attendere l’arrivo su SDI (si paga solo post ricezione).</li>
+            <li>Conferma a Tesoreria chi può essere pagato subito (fatture a sistema o fatture elettroniche già pervenute).</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>10.3 Invio a Tesoreria e Pagamento Effettivo</h3>
+      <ul>
+        <li>Invio del file (perimetro pagamenti) a Tesoreria (fabrizio.tesoreri@..., es.) con i nomi e gli importi.</li>
+        <li>Tesoreria procede con i bonifici “a sistema” e successivamente con le fatture elettroniche non appena ricevute.</li>
+        <li>Ogni giorno l’operatore controlla le nuove fatture elettroniche arrivate, aggiorna il file e invia a Tesoreria le nuove disposizioni di pagamento.</li>
+        <li>Una volta esaurite tutte le fatture (pagate o sospese volontariamente), il mese si considera chiuso.</li>
+      </ul>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2025 Vita Nuova
+  </footer>
+</body>
+</html>

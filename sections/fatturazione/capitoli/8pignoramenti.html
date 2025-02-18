@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>8. Pignoramenti</title>
+  <link rel="stylesheet" href="../../../css/style.css" />
+  <style>
+    body, main, section, p, ul, ol, li, h2, h3, h4, h5 {
+      text-align: left;
+      margin: 0;
+      padding: 0;
+    }
+    p, ul, ol {
+      margin: 0 0 10px 0;
+      padding: 0;
+    }
+    h2, h3, h4, h5 {
+      margin: 15px 0 10px 0;
+    }
+    main {
+      padding: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #0055A4;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    nav ul li {
+      margin-right: 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #0055A4;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .container {
+      min-height: calc(100vh - 50px);
+      padding-bottom: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header style="background-color: #ffffff; border: 3px solid #0055A4; border-radius: 10px; padding: 10px; text-align: center;">
+    <a href="../../../index.html">
+      <img src="../../../images/vitanuova-logo.svg" alt="Logo Vita Nuova" style="max-width: 200px; cursor: pointer;">
+    </a>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="../indice_fatturazione_provvigioni.html">Torna all'Indice</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <main>
+      <h2>8. Pignoramenti</h2>
+
+      <h3>8.1 Atti di Pignoramento e Percentuali</h3>
+      <ul>
+        <li>Se un collaboratore riceve un atto di pignoramento (ad esempio dall’Agenzia delle Entrate Riscossione), Vita Nuova è obbligata a trattenere una parte delle sue provvigioni (10%, 14,28%, 20% in base agli scaglioni, a seconda di come è scritto nell’atto).</li>
+        <li>L’ufficio riceve una comunicazione formale con l’ammontare complessivo del debito e le istruzioni su come trattenere.</li>
+      </ul>
+
+      <h3>8.2 Versamento all’Agenzia delle Entrate</h3>
+      <ul>
+        <li>Ogni mese, quando si paga il collaboratore, si calcola l’importo da trattenere e lo si versa direttamente all’Erario (con apposito IBAN dell’Agenzia delle Entrate, indicato nell’atto).</li>
+        <li>Al collaboratore viene accreditato il netto rimanente.</li>
+      </ul>
+
+      <h3>8.3 Registri e Tracciamento dei Pagamenti</h3>
+      <ul>
+        <li><strong>File Excel “ATTI PIGNORAMENTO COLLABORATORI”:</strong> qui si annota, per ogni mese, l’importo lordo della fattura, la quota trattenuta e la quota netta al collaboratore.</li>
+        <li><strong>Mail a Tesoreria:</strong> “Per Tizio, trattenere 500€ per pignoramento, versare sul conto dell’AdE di Trapani IBAN X, il resto va a lui su IBAN Y”.</li>
+        <li><strong>Contabile:</strong> la Tesoreria, dopo il pagamento, invia la contabile che va inoltrata al collaboratore (come prova che l’importo è stato versato).</li>
+      </ul>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2025 Vita Nuova
+  </footer>
+</body>
+</html>

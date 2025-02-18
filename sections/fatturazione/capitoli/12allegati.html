@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>12. Allegati ed Esempi di File</title>
+  <link rel="stylesheet" href="../../../css/style.css" />
+  <style>
+    body, main, section, p, ul, ol, li, h2, h3, h4, h5 {
+      text-align: left;
+      margin: 0;
+      padding: 0;
+    }
+    p, ul, ol {
+      margin: 0 0 10px 0;
+      padding: 0;
+    }
+    h2, h3, h4, h5 {
+      margin: 15px 0 10px 0;
+    }
+    main {
+      padding: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #0055A4;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    nav ul li {
+      margin-right: 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #0055A4;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .container {
+      min-height: calc(100vh - 50px);
+      padding-bottom: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header style="background-color: #ffffff; border: 3px solid #0055A4; border-radius: 10px; padding: 10px; text-align: center;">
+    <a href="../../../index.html">
+      <img src="../../../images/vitanuova-logo.svg" alt="Logo Vita Nuova" style="max-width: 200px; cursor: pointer;">
+    </a>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="../indice_fatturazione_provvigioni.html">Torna all'Indice</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <main>
+      <h2>12. Allegati ed Esempi di File</h2>
+
+      <ol>
+        <li><strong>Esempi di File Excel:</strong>
+          <ul>
+            <li>“File fatturazione 2022-2023-2024” con sezione “MEMOFATTURAZIONE”, cartelle per Lettere di Intenti, Elenco pignoramenti, Sistemazioni d’Area.</li>
+            <li>“Registro Pagamenti Mensili” o “Registro Fatture Elettroniche”, in cui si segna data di arrivo della fattura, importo, data di pagamento.</li>
+          </ul>
+        </li>
+        <li><strong>Schema Email Sistemazioni d’Area:</strong>
+          <p>Oggetto: Sistemazioni d’Area – Mese Produttivo [xx/xx/xxxx – xx/xx/xxxx]</p>
+          <p>Ciao,</p>
+          <p>di seguito le variazioni:</p>
+          <ul>
+            <li>+500€ a [Codice VNH Bianchi]</li>
+            <li>-500€ a [Codice VNH Rossi]</li>
+          </ul>
+          <p>Allego file Excel di dettaglio.<br />Grazie.</p>
+        </li>
+        <li><strong>Schema Email Pignoramenti a Tesoreria:</strong>
+          <p>Oggetto: Pignoramento [Nome Collaboratore] – Mese Produttivo XX/XXXX</p>
+          <p>Buongiorno,</p>
+          <p>per il collaboratore [Nome, codice VNH], trattenere XX% (es. 500€) e versare all’Agenzia delle Entrate IBAN [xxx].<br />Il resto (XXX€) bonificarlo su IBAN del collaboratore.<br />Allego file pignoramento e ringrazio.</p>
+        </li>
+        <li><strong>Schema Sollecito Fattura Elettronica:</strong>
+          <p>Oggetto: Gentile [Nome], sollecito fattura mese produttivo XX/XXXX</p>
+          <p>Ciao [Nome],</p>
+          <p>ti ricordiamo di emettere la fattura elettronica per l’importo di €[xyz], come da proforma inviata.<br />Codice destinatario Vita Nuova: M5UXCR1<br />In attesa, grazie e buona giornata.</p>
+        </li>
+        <li><strong>Riepilogo Esempio:</strong>
+          <ul>
+            <li>Mese produttivo “Gennaio 2024” (15/12 – 15/01).</li>
+            <li>Al 18/01, Paolo Meneghelli fa il penultimo giro e invia PDF/Excel di simulazione.</li>
+            <li>L’operatore inserisce sistemazioni d’Area arrivate via mail, aggiorna i contributi Energia Nuova e controlla i pignoramenti.</li>
+            <li>Verso il 20/01, arriva il giro definitivo (perimetro). L’operatore evidenzia in rosso chi è in fattura elettronica e/o chi non deve essere pagato. Manda a Tesoreria la Distinta 1 con i collaboratori “pagabili subito”.</li>
+            <li>Riceve ogni giorno l’export delle fatture elettroniche, confronta importi, manda una Distinta 2, 3, etc., ogni volta che si accumulano un certo numero di fatture pronte da pagare.</li>
+            <li>A fine gennaio, tutte le fatture (salvo sospesi volontari) sono state pagate. L’operatore stampa i cedolini da VNH, li invia a Beatrice (contabilità) e archivia il mese.</li>
+            <li>A inizio febbraio, si procede a “pulire” VNH da tutte le voci di Gennaio 2024 e si passa a lavorare sul “Febbraio 2024 produttivo”.</li>
+          </ul>
+        </li>
+      </ol>
+
+      <h3>CONCLUSIONI</h3>
+      <p>Questa versione approfondita del manuale fornisce un quadro completo e dettagliato di ogni step del flusso di fatturazione, integrando:</p>
+      <ol>
+        <li>Processi standard (chiusura, pulizia dati, generazione fatture).</li>
+        <li>Voci speciali (anticipi, over, pignoramenti, contributi ufficio, lettere di intenti, ecc.).</li>
+        <li>Gestione contabile (pagamenti, fatture elettroniche, note di credito, archiviazione).</li>
+      </ol>
+      <p>Seguendo con attenzione ciascun passaggio ed effettuando costantemente i controlli incrociati (file Excel vs. VNH, mail vs. quadernone, penultimo giro vs. giro definitivo), si riducono al minimo gli errori e si garantisce una corretta e trasparente gestione di tutte le provvigioni.</p>
+      <p><strong>Buona prassi:</strong> Mantenere sempre ordine e meticolosità (aggiornando di continuo i documenti Excel e VNH), e comunicare tempestivamente con Tesoreria e Direzione quando emergono situazioni non standard.</p>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2025 Vita Nuova
+  </footer>
+</body>
+</html>
